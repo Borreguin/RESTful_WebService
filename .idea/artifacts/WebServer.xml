@@ -6,6 +6,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="RESTful_WS" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="org.glassfish.jersey.core:jersey-client:2.10" />
+        </element>
       </element>
     </root>
   </artifact>

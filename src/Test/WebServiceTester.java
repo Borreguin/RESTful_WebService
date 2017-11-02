@@ -15,7 +15,8 @@ import java.util.List;
 public class WebServiceTester {
 
     // for this test is necessary this dependence:
-    // org.glassfish.jersey.core:jersey-client:2.0
+    // org.glassfish.jersey.core:jersey-client:2.10
+    // needs guava 2.24 or superior.
     private Client client;
     private String REST_SERVICE_URL = "http://localhost:5050/WebServer/UserService/users";
     private static final String SUCCESS_RESULT="<result>success</result>";
