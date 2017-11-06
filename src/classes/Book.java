@@ -1,6 +1,6 @@
 package classes;
 
-public class book {
+public class Book {
     private String book_id;
     private String title;
     private String author_last_name;
@@ -8,7 +8,7 @@ public class book {
     private int rating;
 
 
-    public book(String book_id, String title,
+    public Book(String book_id, String title,
                 String author_last_name,
                 String author_first_name,
                 int rating) {
@@ -19,4 +19,7 @@ public class book {
         this.rating = rating;
     }
 
+    public String getTitle() {
+        return title;
+    }
 }

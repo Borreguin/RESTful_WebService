@@ -23,7 +23,7 @@ public class MyApplication extends Application {
     @Override
     public Set<Class<?>> getClasses(){
         HashSet h = new HashSet<Class<?>>();
-        h.add(HelloWorld.class);
+        h.add(MainPage.class);
         h.add(User.class);
         h.add(UserDao.class);
         h.add(UserService.class);

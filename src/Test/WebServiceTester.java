@@ -10,6 +10,7 @@ import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
+import static classes.Conf_global.SUCCESS_RESULT;
 
 
 public class WebServiceTester {
@@ -19,7 +20,6 @@ public class WebServiceTester {
     // needs guava 2.24 or superior.
     private Client client;
     private String REST_SERVICE_URL = "http://localhost:5050/WebServer/UserService/users";
-    private static final String SUCCESS_RESULT="<result>success</result>";
     private static final String PASS = "pass";
     private static final String FAIL = "fail";
 

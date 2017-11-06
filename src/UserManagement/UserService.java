@@ -1,19 +1,18 @@
 package UserManagement;
 
-import javax.jws.soap.SOAPBinding;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 import java.util.List;
+import static classes.Conf_global.FAILURE_RESULT;
+import static classes.Conf_global.SUCCESS_RESULT;
+
 
 @Path("/UserService")
 public class UserService {
     UserDao userDao = new UserDao();
-    // Notification Messages:
-    private static final String SUCCESS_RESULT = "<result>success</result>";
-    private static final String FAILURE_RESULT = "<result>failure</result>";
 
     // Gets all users:
     @GET

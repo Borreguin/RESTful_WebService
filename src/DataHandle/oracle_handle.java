@@ -1,6 +1,6 @@
 package DataHandle;
 
-import classes.book;
+import classes.Book;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -10,9 +10,9 @@ import java.util.List;
 public class oracle_handle {
     private static Connection conn;
 
-    public List<book> getBookByTittle(String title) throws SQLException{
+    public List<Book> getBookByTittle(String title) throws SQLException{
         // Making the SQL query
-        List<book> books = new ArrayList<>();
+        List<Book> books = new ArrayList<>();
         try {
             Class.forName("oracle.jdbc.OracleDriver");
             //Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -28,7 +28,7 @@ public class oracle_handle {
 
             while (rs.next()){
 
-                books.add(new book(rs.getString(1), //id
+                books.add(new Book(rs.getString(1), //id
                         rs.getString(2),  // title
                         rs.getString(3),  // author last name
                         rs.getString(4),  // author first name
