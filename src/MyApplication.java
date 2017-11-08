@@ -1,6 +1,8 @@
+import BookManager.BookService;
 import UserManagement.User;
 import UserManagement.UserDao;
 import UserManagement.UserService;
+import classes.imageService;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -27,6 +29,8 @@ public class MyApplication extends Application {
         h.add(User.class);
         h.add(UserDao.class);
         h.add(UserService.class);
+        h.add(imageService.class);
+        h.add(BookService.class);
         return h;
     }
 }

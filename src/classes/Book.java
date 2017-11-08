@@ -1,5 +1,8 @@
 package classes;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Book {
     private String book_id;
     private String title;
@@ -17,6 +20,10 @@ public class Book {
         this.author_last_name = author_last_name;
         this.author_first_name = author_first_name;
         this.rating = rating;
+    }
+
+    public String getAuthor_last_name() {
+        return author_last_name;
     }
 
     public String getTitle() {

@@ -31,18 +31,3 @@ public class MainPage {
     }
 }
 
-/* connecting to Oracle DB
-    // Return some cliched textual content
-    StringBuilder toPrint = new StringBuilder();
-
-    // Connecting to Oracle dataBase (example)
-    // in $GLASS_FISH_DIRECTORY$\domains\domain1\lib\ext
-    // is necessary to put the driver: ojdbc6 or superior
-    oracle_handle db = new oracle_handle();
-    List<Book> library = db.getBookByTittle("%a%");
-        for(Book bk: library){
-        toPrint.append("\n" + bk.getTitle());
-    }
-    // End of example.
-        return "This is my first service: Hello World \n\n -- Books in Library DB:\n" + toPrint;
-        */

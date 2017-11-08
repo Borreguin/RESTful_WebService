@@ -24,12 +24,5 @@ public class Conf_global {
         return this.pathProject;
     }
 
-    // get the current relative path of this application
-    public static final String workingDir = Conf_global.class.getResource("Conf_global.class").toString();
-
-
-
-    //public static final Path currentPath
-
 
 }

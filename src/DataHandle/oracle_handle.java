@@ -10,6 +10,10 @@ import java.util.List;
 public class oracle_handle {
     private static Connection conn;
 
+    // Connecting to Oracle dataBase (example)
+    // in $GLASS_FISH_DIRECTORY$\domains\domain1\lib\ext
+    // is necessary to put the driver: ojdbc6 or superior
+
     public List<Book> getBookByTittle(String title) throws SQLException{
         // Making the SQL query
         List<Book> books = new ArrayList<>();
