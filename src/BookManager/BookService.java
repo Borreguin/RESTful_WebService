@@ -24,8 +24,7 @@ public class BookService {
     @Path("/books")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Book> getBooks() throws SQLException {
-        List<Book> library = db.getBookByTittle("%%");
-        return library;
+        return db.getBookByTittle("%%");
     }
 
 }

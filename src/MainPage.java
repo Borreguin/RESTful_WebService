@@ -20,7 +20,7 @@ public class MainPage {
 
     @GET
     // The Java method will produce content identified by
-    // the MIME Media type "text/plain"
+    // the MIME Media type "text/html"
     @Produces({MediaType.TEXT_HTML})
     public InputStream getClichedMessage() throws FileNotFoundException {
 
