@@ -1,4 +1,7 @@
-package UserManagement;
+package Services;
+
+import UserManagement.User;
+import UserManagement.UserDao;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.*;

@@ -1,7 +1,7 @@
-import BookManager.BookService;
+import Services.BookService;
 import UserManagement.User;
 import UserManagement.UserDao;
-import UserManagement.UserService;
+import Services.UserService;
 import classes.imageService;
 
 import javax.ws.rs.ApplicationPath;
