@@ -26,8 +26,6 @@ public class MyApplication extends Application {
     public Set<Class<?>> getClasses(){
         HashSet h = new HashSet<Class<?>>();
         h.add(MainPage.class);
-        h.add(User.class);
-        h.add(UserDao.class);
         h.add(UserService.class);
         h.add(imageService.class);
         h.add(BookService.class);
